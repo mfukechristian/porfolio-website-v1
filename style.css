@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,400;0,500;0,600;0,800;1,300;1,600;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  width: 100%;
+  color: #191545;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+h1 {
+  font-size: 4.5rem;
+  line-height: 114px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+p {
+  margin: 20px 0;
+}
+
+section {
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+button {
+  width: 120px;
+  height: 40px;
+  border: none;
+  background-color: #191545;
+  cursor: pointer;
+  outline: none;
+  margin: 10px 0;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  font-weight: 600;
+  text-align: center;
+}
+
+footer a {
+  color: #191545;
+  font-weight: 600;
+}
+
+#main {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+#skills .tools-skills {
+  display: flex;
+  padding-left: 40px;
+}
+
+#skills .tools-skills ul:first-child {
+  margin-right: 80px;
+}
+
+.hero-detail {
+  font-size: 1.8rem;
+  line-height: 40px;
+}
+
+.project-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.project-container p {
+  width: 60%;
+}
+
+.project-container ul {
+  padding-left: 30px;
+}
+
+.project-container ul span {
+  color: #0a00ce;
+}
+
+.project-container img {
+  width: 500px;
+}
+
+.email {
+  color: #0a00ce;
+  text-decoration: underline;
+}
+
+@media (max-width: 1400px) {
+  .project-container img {
+    width: 350px;
+    padding-left: 40px;
+  }
+
+  .project-container p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1030px) {
+  .skills-tools {
+    width: 20%;
+  }
+  .project-container img {
+    width: 350px;
+    padding-left: 40px;
+  }
+
+  .project-container p {
+    width: 100%;
+  }
+
+  .button-container {
+    display: flex;
+  }
+
+  .button-container .btn {
+    margin: 5px;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  #main {
+    width: 80%;
+  }
+  .project-container {
+    flex-direction: column;
+  }
+
+  .project-container img {
+    padding-left: 0;
+    padding-top: 40px;
+    width: 300px;
+  }
+
+  h1 {
+    font-size: 3rem;
+    line-height: 60px;
+  }
+
+  .hero-detail {
+    font-size: 1.2rem;
+    line-height: 30px;
+  }
+}

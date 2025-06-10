@@ -118,6 +118,28 @@ footer a {
   font-size: 1rem;
 }
 
+#services {
+  margin-bottom: 100px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.service-item h3 {
+  color: #1c1c1c;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  color: #767676;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
 .project-container {
   display: flex;
   justify-content: space-between;
@@ -210,6 +232,11 @@ footer a {
   .project-container img {
     margin-bottom: 30px;
   }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -243,5 +270,10 @@ footer a {
   #skills .tools-skills {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 }
